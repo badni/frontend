@@ -1,0 +1,58 @@
+<template>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">badni</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">خانه
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">دست‌بند</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">گل‌دوزی</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">مجسمه</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <el-button type="success" class="signup-btn" round>ثبت‌نام</el-button>
+            <el-button type="primary" class="signin-btn" round>ورود</el-button>
+            <el-button type="primary" icon="el-icon-s-goods" circle></el-button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: 'NavBar',
+  props: {
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss" scoped>
+.bg-dark-custom {
+    background-color: #1c1c1c
+}
+
+.signup-btn {
+    border-radius: 0 20px 20px 0 !important
+}
+
+.signin-btn {
+    border-radius: 20px 0 0 20px !important
+}
+</style>
