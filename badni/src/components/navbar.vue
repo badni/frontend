@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom shadow fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">badni</a>
+      <a class="navbar-brand" href="#"><div class="logo"></div></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,5 +54,13 @@ export default {
 
 .signin-btn {
     border-radius: 20px 0 0 20px !important
+}
+
+.logo {
+    background-image: url("../assets/logo.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 22px;
+    width: 63px;
 }
 </style>
