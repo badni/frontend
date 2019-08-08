@@ -6,10 +6,9 @@ import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue)
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import 'bootstrap/dist/css/bootstrap-reboot.min.css'
-import 'bootstrap/dist/css/bootstrap-rtl.min.css'
+import './css/bootstrap-rtl.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import 'bootstrap/dist/css/bootstrap-rtl.min.css'
-import 'iransans-fontface/css/iransans/iransans-fontface.css'
+import './css/iransans-fontface.css'
 
 import Element from 'element-ui'
 Vue.use(Element)
