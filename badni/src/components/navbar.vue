@@ -24,8 +24,8 @@
         </ul>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <el-button type="success" class="signup-btn" round>ثبت‌نام</el-button>
-            <el-button type="primary" class="signin-btn" round>ورود</el-button>
+            <el-button type="success" class="signup-btn" v-on:click="goSignup()" round>ثبت‌نام</el-button>
+            <el-button type="primary" class="signin-btn" v-on:click="goLogin()" round>ورود</el-button>
             <el-button type="primary" icon="el-icon-s-goods" circle></el-button>
           </li>
         </ul>
@@ -38,6 +38,14 @@
 export default {
   name: 'NavBar',
   props: {
+  },
+  methods: {
+    goLogin () {
+      this.$router.push('/login')
+    },
+    goSignup () {
+      this.$router.push('/signup')
+    }
   }
 }
 </script>
